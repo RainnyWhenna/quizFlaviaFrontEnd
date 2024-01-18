@@ -1,0 +1,21 @@
+<mat-card id="teste">
+  <mat-card-content id="perguntas">
+    <div id="teste-container" class="mat-title">
+      <h1 class="mat-display-1">Teste de Maturidade em Produção de Conteúdo no LinkedIn</h1>
+
+      <div id="perguntas-container" *ngIf="currentQuestion">
+        <h2 class="mat-headline">{{ currentQuestion?.question }}</h2>
+        <div *ngFor="let option of currentQuestion?.options; let i = index">
+          <button id="btn-resposta" mat-raised-button (click)="selectOption(option.score)">
+            {{ option.text }}
+          </button>
+        </div>
+      </div>
+
+      <div id="respostas-container" *ngIf="testeFinalizado">
+        <h3 class="mat-subheading-2">Pontuação: {{ score }}</h3>
+        <p class="mat-body-1">{{ textoPontuacao(score) }}</p>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

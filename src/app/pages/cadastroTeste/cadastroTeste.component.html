@@ -1,0 +1,39 @@
+<mat-card>
+  <h1>Bem-vindo(a)!</h1>
+  <h2>Descubra seu nível de maturidade na produção de conteúdo no LinkedIn.</h2>
+  <h4>Preencha os dados para começarmos.</h4>
+
+  <form [formGroup]="cadastroForm" (ngSubmit)="submit()" #formDit="ngForm">
+    <input type="hidden" formControlName="idPessoa">
+
+    <div class="input-box">
+      <mat-form-field>
+        <mat-label>Nome completo</mat-label>
+        <input matInput formControlName="nomeCompleto" placeholder="Insira o nome completo" required>
+      </mat-form-field>
+    </div>
+    <div class="input-box">
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" placeholder="Insira o email" required>
+      </mat-form-field>
+    </div>
+    <div class="input-box">
+      <mat-form-field>
+        <mat-label>Whatsapp</mat-label>
+        <input matInput formControlName="whatsapp" mask="(00) 00000-0000" placeholder="Insira o whatsapp com o DDD" required>
+      </mat-form-field>
+    </div>
+    <div class="input-box-cad">
+      <mat-form-field>
+        <mat-label>URL do Linkedin</mat-label>
+        <input matInput formControlName="linkedin"  placeholder="Insira a URL do seu Linkedin" required>
+      </mat-form-field>
+    </div>
+
+    <div class="btn-box-cad">
+      <button mat-raised-button color="primary" type="submit">Começar teste</button>
+    </div>
+
+  </form>
+</mat-card>

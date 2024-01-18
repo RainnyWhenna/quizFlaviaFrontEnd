@@ -1,0 +1,43 @@
+#teste-container {
+  text-align: center;
+}
+
+mat-card {
+  width: 80%;
+  padding: 2rem;
+  margin: 5rem auto; /* Center the card horizontally */
+  text-align: center;
+}
+
+perguntas-container {
+  margin-top: 1rem;
+}
+
+#btn-resposta {
+  height: 70px;
+  width: 100%;
+  max-width: 650px;
+  margin-top: 0.5rem;
+}
+
+h1 {
+  color: #857DB1;
+  margin-bottom: 50px;
+}
+
+h2 {
+  color: #533D88;
+}
+
+h3 {
+  color: #533D88;
+}
+
+.mat-body-1 {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
